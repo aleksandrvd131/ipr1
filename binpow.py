@@ -1,9 +1,12 @@
 def binpow(a, b):
     res = 1
-    while (a > 0):
-        if (a % 2 == 1):
+    while (b > 0):
+        if (b % 2 == 1):
             res *= a
         a *= a
+        b //= 2
     return res
 
-binpow(3,4)
+for i in range(1, 5):
+    a, b = map(int, input("Введите чиселки через пробел:\n").split())
+    print(binpow(a, b))
