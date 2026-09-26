@@ -6,4 +6,4 @@ def binpow(a, b):
         a *= a
     return res
 
-binpow(3,4) #33902193-2103i9-21
+binpow(3,4)
