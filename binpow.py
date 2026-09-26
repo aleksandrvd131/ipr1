@@ -5,3 +5,5 @@ def binpow(a, b):
             res *= a
         a *= a
     return res
+
+binpow(3,4)
