@@ -7,3 +7,5 @@ def binpow(a, b):
     return res
 
 binpow(3,4)
+
+print("wtf i'm doing")
