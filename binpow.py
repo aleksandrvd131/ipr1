@@ -7,9 +7,13 @@ def binpow(a, b):
         b //= 2
     return res
 
-k = int(input("Введите количество возведений в степень:\n"))
-res = ""
-for i in range(k):
-    a, b = map(int, input("Введите чиселки сколько-то там раз через пробел:\n"*(i==0)).split())
-    res += str(binpow(a, b)) + "\n"
-print(res)
+def main():
+    k = int(input("Введите количество возведений в степень:\n"))
+    res = ""
+    for i in range(k):
+        a, b = map(int, input("Введите чиселки сколько-то там раз через пробел:\n" * (i == 0)).split())
+        res += str(binpow(a, b)) + "\n"
+    print(res)
+
+if __name__ == "__main__":
+    main()
