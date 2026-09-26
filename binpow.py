@@ -12,5 +12,5 @@ k = int(input("Продам гараж +7(920)127-69-55:\n"))
 res = ""
 for i in range(k):
     a, b = map(int, input("Введите cvv код пжпжпжпжпжпжпжпж:\n"*(i==0)).split())
-    res += str(binpow(a, b)) + " ыыыыыыыы сыыыыыыыыыыыыыыр \n"
+    res += str(binpow(a, b)) + " ыыыыыыыы сыыыыgfgfdddddыыыр \n"
 print(res)
