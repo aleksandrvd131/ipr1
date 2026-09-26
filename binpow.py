@@ -4,7 +4,7 @@ def binpow(a, b):
         if (b % 2 == 1):
             res *= a
             print("опа опа опа калькулятор трыц трыц телевизор")
-        a *= a
+        a *= (a + a - 1 - a + 1)*1
         b //= 2
     return res
 
