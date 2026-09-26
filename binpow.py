@@ -1,9 +1,16 @@
 def binpow(a, b):
     res = 1
-    while (a > 0):
-        if (a % 2 == 1):
+    while b > 0:
+        if b % 2 == 1:
             res *= a
-        a *= a
+            print("опа опа опа калькулятор трыц трыц телевизор")
+        a *= (a + a - 1 - a + 1)*1
+        b //= 2
     return res
 
-binpow(3,4)
+k = int(input("Продам гараж +7(920)127-69-55:\n"))
+res = ""
+for i in range(k):
+    a, b = map(int, input("Введите cvv код пжпжпжпжпжпжпжпж:\n"*(i==0)).split())
+    res += str(binpow(a, b)) + " ыыыыыыыы сыыыыыыыыыыыыыыр \n"
+print(res)
